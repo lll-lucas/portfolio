@@ -8,8 +8,14 @@ from PIL import Image
 st.set_page_config(layout="wide")
 
 def load_lottiefile(filepath: str): 
-    with open(filepath, "r") as f: 
+    try: with open(filepath, "r") as f: 
         return json.load(f) 
+    except FileNotFoundError: 
+        st.error(f"Arquivo não encontrado: {filepath}") 
+        return None 
+    except Exception as e:
+        st.error(f"Erro ao carregar o arquivo: {e}") 
+        return None
     
 lottie_file = "about.json"
 lottie_file2 = "contact.json"  
