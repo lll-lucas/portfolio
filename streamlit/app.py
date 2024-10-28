@@ -8,8 +8,9 @@ from PIL import Image
 st.set_page_config(layout="wide")
 
 def load_lottiefile(filepath: str): 
-    try: with open(filepath, "r") as f: 
-        return json.load(f) 
+    try: 
+        with open(filepath, "r") as f: 
+            return json.load(f) 
     except FileNotFoundError: 
         st.error(f"Arquivo não encontrado: {filepath}") 
         return None 
@@ -19,8 +20,13 @@ def load_lottiefile(filepath: str):
     
 lottie_file = "about.json"
 lottie_file2 = "contact.json"  
+
 lottie_about = load_lottiefile(lottie_file)
 lottie_contact = load_lottiefile(lottie_file2)
+
+if lottie_about is None or lottie_contact is None: 
+    st.stop()
+    
 monte_carlo = Image.open("C:/Users/llluc/Documents/streamlit/monte_carlo.png")
 regressao_multivariada = Image.open("C:/Users/llluc/Documents/streamlit/monte_carlo.png")
 queimadas = Image.open("C:/Users/llluc/Documents/streamlit/monte_carlo.png")
