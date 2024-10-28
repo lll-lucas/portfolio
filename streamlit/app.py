@@ -4,6 +4,7 @@ import requests
 from streamlit_lottie import st_lottie
 import json
 from PIL import Image
+import os
 
 st.set_page_config(layout="wide")
 
@@ -18,8 +19,9 @@ def load_lottiefile(filepath: str):
         st.error(f"Erro ao carregar o arquivo: {e}") 
         return None
     
-lottie_file = "about.json"
-lottie_file2 = "contact.json"  
+current_dir = os.path.dirname(os.path.abspath(__file__)) 
+lottie_file = os.path.join(current_dir, "about.json") 
+lottie_file2 = os.path.join(current_dir, "contact.json")
 
 lottie_about = load_lottiefile(lottie_file)
 lottie_contact = load_lottiefile(lottie_file2)
