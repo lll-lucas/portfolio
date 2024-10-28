@@ -29,9 +29,9 @@ lottie_contact = load_lottiefile(lottie_file2)
 if lottie_about is None or lottie_contact is None: 
     st.stop()
     
-monte_carlo = Image.open("C:/Users/llluc/Documents/streamlit/monte_carlo.png")
-regressao_multivariada = Image.open("C:/Users/llluc/Documents/streamlit/monte_carlo.png")
-queimadas = Image.open("C:/Users/llluc/Documents/streamlit/monte_carlo.png")
+monte_carlo = Image.open("streamlit/monte_carlo.png")
+regressao_multivariada = Image.open("streamlit/monte_carlo.png")
+queimadas = Image.open(streamlit/monte_carlo.png")
 
 st.write("##")
 st.markdown("<h3 style='text-align: center;'>Olá, visitante! 👋</h3>", unsafe_allow_html=True)
