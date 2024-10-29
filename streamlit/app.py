@@ -40,6 +40,17 @@ monte_carlo = Image.open("streamlit/monte_carlo.png")
 regressao_multivariada = Image.open("streamlit/monte_carlo.png")
 queimadas = Image.open("streamlit/monte_carlo.png")
 
+st.markdown(
+    """
+    <style>
+    a:hover {
+        text-decoration: none;
+        cursor: default;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.write("##")
 st.markdown("<h3 style='text-align: center; text-decoration: none;'>Olá, visitante! 👋</h3>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; text-decoration: none;'>Meu nome é Lucas</h1>", unsafe_allow_html=True)
