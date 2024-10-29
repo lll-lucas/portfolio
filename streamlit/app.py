@@ -66,7 +66,7 @@ st.markdown("""
         <a href='https://github.com/lll-lucas' target='_blank' style='text-decoration: none;'>
             <img src='https://img.icons8.com/ios-filled/50/808080/github.png' alt='GitHub' style='margin: 0 10px;'/> 
         </a> 
-        <a href='www.linkedin.com/in/lucas-barboza-de-araújo-' target='_blank' style='text-decoration: none;'>
+        <a href='https://www.linkedin.com/in/lucas-barboza-de-araújo-' target='_blank' style='text-decoration: none;'>
             <img src='https://img.icons8.com/ios-filled/50/808080/linkedin.png' alt='LinkedIn' style='margin: 0 10px;'/> 
         </a> 
         <a href='https://medium.com/@lllucas.barboza' target='_blank' style='text-decoration: none;'>
