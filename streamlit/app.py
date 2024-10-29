@@ -52,25 +52,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown(
-    """
-    <style>
-    .horizontal-scrollable {
-        display: flex;
-        justify-content: center;
-        overflow-x: auto;
-        gap: 10px;
-    }
-    .horizontal-scrollable img {
-        flex: 0 0 auto;
-        width: 48px;
-        height: auto;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 st.write("##")
 st.markdown("<h3 style='text-align: center; text-decoration: none;'>Olá, visitante! 👋</h3>", unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; text-decoration: none;'>Meu nome é Lucas</h1>", unsafe_allow_html=True)
@@ -108,14 +89,19 @@ if selected == 'About':
                      a extração de insights valiosos, fundamentais para orientação na tomada de decisões estrategicas. </div>""", unsafe_allow_html=True)
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Entre as principais tecnologias que domino estão: </div>""", unsafe_allow_html=True)
             st.write("") 
-            st.markdown("<div class='horizontal-scrollable'>", unsafe_allow_html=True)
-            st.image(os.path.join(current_dir, "python.png"), width=48)
-            st.image(os.path.join(current_dir, "r.png"), width=48)
-            st.image(os.path.join(current_dir, "mysql.png"), width=48)
-            st.image(os.path.join(current_dir, "postgresql.png"), width=48)
-            st.image(os.path.join(current_dir, "power_bi.png"), width=48)
-            st.image(os.path.join(current_dir, "excel.png"), width=48)
-            st.markdown("</div>", unsafe_allow_html=True)
+            col3, col4, col5, col6, col7, col8 = st.columns(6) 
+            with col3: 
+                st.image(os.path.join(current_dir, "python.png"), width=48) 
+            with col4: 
+                st.image(os.path.join(current_dir, "r.png"), width=48) 
+            with col5: 
+                st.image(os.path.join(current_dir, "mysql.png"), width=48) 
+            with col6: 
+                st.image(os.path.join(current_dir, "postgresql.png"), width=48) 
+            with col7: 
+                st.image(os.path.join(current_dir, "power_bi.png"), width=48) 
+            with col8: 
+                st.image(os.path.join(current_dir, "excel.png"), width=48)
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Ficou interessado? Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
