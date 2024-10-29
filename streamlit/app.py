@@ -43,13 +43,12 @@ queimadas = Image.open("streamlit/monte_carlo.png")
 st.markdown(
     """
     <style>
-    /* Remove o ícone de link no hover */
-    a:hover {
+    /* Remove o ícone de link que aparece no hover de títulos */
+    .css-10trblm.e16nr0p30 a {
+        pointer-events: none;
         text-decoration: none !important;
         cursor: default !important;
-    }
-    h3, h1 {
-        text-decoration: none;
+        color: inherit !important;
     }
     </style>
     """,
