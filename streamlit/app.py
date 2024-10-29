@@ -30,7 +30,7 @@ if lottie_about is None or lottie_contact is None:
     st.stop()
 
 # Verifique se os arquivos de imagem estão no diretório correto 
-image_files = ["python.png", "r.png", "mysql.png", "postgresql.png", "powerbi.png", "excel.png"] 
+image_files = ["python.png", "r.png", "mysql.png", "postgresql.png", "power_bi.png", "excel.png"] 
 for image_file in image_files:
     image_path = os.path.join(current_dir, image_file) 
     if not os.path.exists(image_path): 
@@ -87,7 +87,7 @@ if selected == 'About':
             with col6: 
                 st.image(os.path.join(current_dir, "postgresql.png"), width=48) 
             with col7: 
-                st.image(os.path.join(current_dir, "powerbi.png"), width=48) 
+                st.image(os.path.join(current_dir, "power_bi.png"), width=48) 
             with col8: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
             st.write("") 
