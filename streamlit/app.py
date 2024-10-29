@@ -78,11 +78,11 @@ st.write('---')
 with st.container():
     selected = option_menu(
         menu_title = None,
-        options = ['About', 'Projects', 'Contact'],
+        options = ['Sobre mim', 'Projetos', 'Contato'],
         icons = ['person', 'code-slash', 'chat-left-text-fill'],
         orientation = 'horizontal'
     )
-if selected == 'About':
+if selected == 'Sobre mim':
 
     with st.container():
         col1, col2 = st.columns(2)
@@ -113,7 +113,7 @@ if selected == 'About':
         with col2: 
             st_lottie(lottie_about)
 
-if selected == "Projects":
+if selected == "Projetos":
     with st.container():
         st.header("Meus Projetos")
         st.write("##")
@@ -146,8 +146,8 @@ if selected == "Projects":
             st.markdown("[Saiba mais](https://github.com/lll-lucas/Outro-Projeto)") 
         st.write("---")
 
-if selected == "Contact":
-    st.header("Get in touch!")
+if selected == "Contato":
+    st.header("Entre em contato por aqui!")
     st.write('##')
 
     contact_form = """ 
