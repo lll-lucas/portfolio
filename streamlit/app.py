@@ -41,9 +41,9 @@ regressao_multivariada = Image.open("streamlit/monte_carlo.png")
 queimadas = Image.open("streamlit/monte_carlo.png")
 
 st.write("##")
-st.markdown("<h3 style='text-align: center;'>Olá, visitante! 👋</h3>", unsafe_allow_html=True)
-st.markdown("<h1 style='text-align: center;'>Meu nome é Lucas</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>Analista de Dados</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; text-decoration: none;'>Olá, visitante! 👋</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; text-decoration: none;'>Meu nome é Lucas</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; text-decoration: none;'>Analista de Dados</h3>", unsafe_allow_html=True)
 st.markdown(""" 
     <div style='text-align: center;'> 
         <a href='https://github.com/lll-lucas' target='_blank' style='text-decoration: none;'>
