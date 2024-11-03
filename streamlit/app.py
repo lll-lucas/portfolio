@@ -40,18 +40,6 @@ monte_carlo = Image.open("streamlit/monte_carlo.png")
 regressao_multivariada = Image.open("streamlit/monte_carlo.png")
 queimadas = Image.open("streamlit/monte_carlo.png")
 
-def logo_with_tag(image_path, label, color):
-    # HTML para centralizar imagem e legenda com fundo retangular
-    st.markdown(
-        f"""
-        <div style='text-align: center;'>
-            <img src='data:image/png;base64,{base64.b64encode(open(image_path, "rb").read()).decode()}' width='48' style='display: block; margin: 0 auto;' alt='{label}'>
-            <div style='padding: 4px; background-color: #f4f4f4; color: {color}; border-radius: 8px; margin-top: 5px;'>{label}</div>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
 # Textos de boas-vindas
 st.write("##")
 st.markdown("<h3 style='text-align: center;'>Olá, visitante! 👋</h3>", unsafe_allow_html=True)
@@ -91,26 +79,48 @@ if selected == 'Sobre mim':
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Entre as principais tecnologias que domino estão: </div>""", unsafe_allow_html=True)
             st.write("") 
             col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
-            with col3:
-                logo_with_tag(os.path.join(current_dir, "python.png"), "Python", "#3572A5")
-
-            with col4:
-                logo_with_tag(os.path.join(current_dir, "r.png"), "R", "#276DC3")
-
-            with col5:
-                logo_with_tag(os.path.join(current_dir, "mysql.png"), "MySQL", "#4479A1")
-
-            with col6:
-                logo_with_tag(os.path.join(current_dir, "mariadb.png"), "MariaDB", "#003545")
-
-            with col7:
-                logo_with_tag(os.path.join(current_dir, "sqlite.png"), "SQLite", "#003B57")
-
-            with col8:
-                logo_with_tag(os.path.join(current_dir, "power_bi.png"), "Power BI", "#F2C811")
-
-            with col9:
-                logo_with_tag(os.path.join(current_dir, "excel.png"), "Excel", "#217346")
+            with col3: 
+                st.image(os.path.join(current_dir, "python.png"), width=48) 
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Python</div>",
+        unsafe_allow_html=True
+    )
+            with col4: 
+                st.image(os.path.join(current_dir, "r.png"), width=48)
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>R</div>",
+        unsafe_allow_html=True
+    )
+            with col5: 
+                st.image(os.path.join(current_dir, "mysql.png"), width=48) 
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>MySQL</div>",
+        unsafe_allow_html=True
+    )
+            with col6: 
+                st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>MariaDB</div>",
+        unsafe_allow_html=True
+    )
+            with col7: 
+                st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>SQlite</div>",
+        unsafe_allow_html=True
+    )
+            with col8: 
+                st.image(os.path.join(current_dir, "power_bi.png"), width=48)
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Power BI</div>",
+        unsafe_allow_html=True
+    )
+            with col9: 
+                st.image(os.path.join(current_dir, "excel.png"), width=48)
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Excel</div>",
+        unsafe_allow_html=True
+    )
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
