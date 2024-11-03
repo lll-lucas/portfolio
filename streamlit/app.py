@@ -35,6 +35,16 @@ for image_file in image_files:
     image_path = os.path.join(current_dir, image_file) 
     if not os.path.exists(image_path): 
         st.error(f"Arquivo de imagem não encontrado: {image_path}")
+
+tech_data = [
+    {"name": "Python", "color": "#3572A5", "icon": "python.png"},
+    {"name": "R", "color": "#276DC3", "icon": "r.png"},
+    {"name": "MySQL", "color": "#4479A1", "icon": "mysql.png"},
+    {"name": "MariaDB", "color": "#003545", "icon": "mariadb.png"},
+    {"name": "SQLite", "color": "#003B57", "icon": "sqlite.png"},
+    {"name": "Power BI", "color": "#F2C811", "icon": "power_bi.png"},
+    {"name": "Excel", "color": "#217346", "icon": "excel.png"},
+]
     
 monte_carlo = Image.open("streamlit/monte_carlo.png")
 regressao_multivariada = Image.open("streamlit/monte_carlo.png")
@@ -78,49 +88,47 @@ if selected == 'Sobre mim':
                      a extração de insights valiosos, fundamentais para orientação na tomada de decisões estratégicas. </div>""", unsafe_allow_html=True)
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Entre as principais tecnologias que domino estão: </div>""", unsafe_allow_html=True)
             st.write("") 
-            col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
-            with col3: 
-                st.image(os.path.join(current_dir, "python.png"), width=48) 
+               # Estilo CSS para o layout das tecnologias
+            st.markdown("""
+                <style>
+                    .tech-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        justify-content: start;
+                    }
+                    .tech-item {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid;
+                        border-radius: 8px;
+                        padding: 4px 8px;
+                        font-size: 1em;
+                        color: #3572A5;
+                        border-color: #3572A5;
+                    }
+                    .tech-icon {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                    }
+                </style>
+                <div class="tech-container">
+            """, unsafe_allow_html=True)
+            # Renderizando os ícones e os nomes das tecnologias
+            for tech in tech_data:
                 st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>Python</div>",
-        unsafe_allow_html=True
-    )
-            with col4: 
-                st.image(os.path.join(current_dir, "r.png"), width=48)
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>R</div>",
-        unsafe_allow_html=True
-    )
-            with col5: 
-                st.image(os.path.join(current_dir, "mysql.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>MySQL</div>",
-        unsafe_allow_html=True
-    )
-            with col6: 
-                st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>MariaDB</div>",
-        unsafe_allow_html=True
-    )
-            with col7: 
-                st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>SQlite</div>",
-        unsafe_allow_html=True
-    )
-            with col8: 
-                st.image(os.path.join(current_dir, "power_bi.png"), width=48)
-                st.markdown(
-        "<div style='text-align: center; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>Power BI</div>",
-        unsafe_allow_html=True
-    )
-            with col9: 
-                st.image(os.path.join(current_dir, "excel.png"), width=48)
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>Excel</div>",
-        unsafe_allow_html=True
-    )
+                    f"""
+                    <div class="tech-item">
+                        <img src="{os.path.join(current_dir, tech['icon'])}" class="tech-icon">
+                        <span>{tech['name']}</span>
+                    </div>
+                    """, 
+                    unsafe_allow_html=True
+                )
+            
+            # Fechando o container das tecnologias
+            st.markdown("</div>", unsafe_allow_html=True)
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
