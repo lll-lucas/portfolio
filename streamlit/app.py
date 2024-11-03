@@ -102,22 +102,40 @@ if selected == 'Sobre mim':
     )
             with col4: 
                 st.image(os.path.join(current_dir, "r.png"), width=48)
-                st.caption("R") 
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>R</div>",
+        unsafe_allow_html=True
+    )
             with col5: 
                 st.image(os.path.join(current_dir, "mysql.png"), width=48) 
-                st.caption("MySQL")
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>MySQL</div>",
+        unsafe_allow_html=True
+    )
             with col6: 
                 st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
-                st.caption("MariaDB")
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>MariaDB</div>",
+        unsafe_allow_html=True
+    )
             with col7: 
                 st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
-                st.caption("SQlite")
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>SQlite</div>",
+        unsafe_allow_html=True
+    )
             with col8: 
                 st.image(os.path.join(current_dir, "power_bi.png"), width=48)
-                st.caption("Power BI")
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Power BI</div>",
+        unsafe_allow_html=True
+    )
             with col9: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
-                st.caption("Excel")
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Excel</div>",
+        unsafe_allow_html=True
+    )
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
