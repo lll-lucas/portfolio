@@ -98,17 +98,23 @@ if selected == 'Sobre mim':
                 st.image(os.path.join(current_dir, "python.png"), width=48) 
                 st.caption("Python")
             with col4: 
-                st.image(os.path.join(current_dir, "r.png"), width=48) 
+                st.image(os.path.join(current_dir, "r.png"), width=48)
+                st.caption("R") 
             with col5: 
                 st.image(os.path.join(current_dir, "mysql.png"), width=48) 
+                st.caption("MySQL")
             with col6: 
                 st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
+                st.caption("MariaDB")
             with col7: 
                 st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
+                st.caption("SQlite")
             with col8: 
                 st.image(os.path.join(current_dir, "power_bi.png"), width=48)
+                st.caption("Power BI")
             with col9: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
+                st.caption("Excel")
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
