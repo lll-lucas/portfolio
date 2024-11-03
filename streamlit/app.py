@@ -94,27 +94,82 @@ if selected == 'Sobre mim':
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Entre as principais tecnologias que domino estão: </div>""", unsafe_allow_html=True)
             st.write("") 
             col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
-            with col3: 
-                st.image(os.path.join(current_dir, "python.png"), width=48) 
-                st.caption("Python")
-            with col4: 
-                st.image(os.path.join(current_dir, "r.png"), width=48)
-                st.caption("R") 
-            with col5: 
-                st.image(os.path.join(current_dir, "mysql.png"), width=48) 
-                st.caption("MySQL")
-            with col6: 
-                st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
-                st.caption("MariaDB")
-            with col7: 
-                st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
-                st.caption("SQlite")
-            with col8: 
-                st.image(os.path.join(current_dir, "power_bi.png"), width=48)
-                st.caption("Power BI")
-            with col9: 
-                st.image(os.path.join(current_dir, "excel.png"), width=48)
-                st.caption("Excel")
+            with col3:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "python.png"), width=48)}' alt='Python'>
+                        <p style='margin-top: -10px;'>Python</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with col4:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "r.png"), width=48)}' alt='R'>
+                        <p style='margin-top: -10px;'>R</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with col5:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "mysql.png"), width=48)}' alt='MySQL'>
+                        <p style='margin-top: -10px;'>MySQL</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with col6:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "mariadb.png"), width=48)}' alt='MariaDB'>
+                        <p style='margin-top: -10px;'>MariaDB</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with col7:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "sqlite.png"), width=48)}' alt='SQLite'>
+                        <p style='margin-top: -10px;'>SQLite</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with col8:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "power_bi.png"), width=48)}' alt='Power BI'>
+                        <p style='margin-top: -10px;'>Power BI</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            with col9:
+                st.markdown(
+                    f"""
+                    <div style='text-align: center;'>
+                        <img src='data:image/png;base64,{st.image(os.path.join(current_dir, "excel.png"), width=48)}' alt='Excel'>
+                        <p style='margin-top: -10px;'>Excel</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True                    
+                )
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
