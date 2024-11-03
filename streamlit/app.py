@@ -80,47 +80,19 @@ if selected == 'Sobre mim':
             st.write("") 
             col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
             with col3: 
-                st.image(os.path.join(current_dir, "python.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>Python</div>",
-        unsafe_allow_html=True
-    )
+                st.image(os.path.join(current_dir, "python.png"), width=48)                
             with col4: 
                 st.image(os.path.join(current_dir, "r.png"), width=48)
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>R</div>",
-        unsafe_allow_html=True
-    )
             with col5: 
-                st.image(os.path.join(current_dir, "mysql.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>MySQL</div>",
-        unsafe_allow_html=True
-    )
+                st.image(os.path.join(current_dir, "mysql.png"), width=48)
             with col6: 
-                st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>MariaDB</div>",
-        unsafe_allow_html=True
-    )
+                st.image(os.path.join(current_dir, "mariadb.png"), width=48)
             with col7: 
-                st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>SQlite</div>",
-        unsafe_allow_html=True
-    )
+                st.image(os.path.join(current_dir, "sqlite.png"), width=48)
             with col8: 
                 st.image(os.path.join(current_dir, "power_bi.png"), width=48)
-                st.markdown(
-        "<div style='text-align: center; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>Power BI</div>",
-        unsafe_allow_html=True
-    )
             with col9: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
-                st.markdown(
-        "<div style='text-align: left; padding: 4px; color: #3572A5; border: 1px solid #3572A5; border-radius: 8px;'>Excel</div>",
-        unsafe_allow_html=True
-    )
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
