@@ -90,13 +90,16 @@ if selected == 'Sobre mim':
             st.title("Saiba mais sobre mim")
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Sou um Analista de Dados com uma formação acadêmica em Estatística, o que me proporcionou uma base sólida de 
                      conhecimento para a análise e interpretação de dados. Possuo domínio das principais ferramentas e metodologias para
-                     a extração de insights valiosos, fundamentais para orientação na tomada de decisões estrategicas. </div>""", unsafe_allow_html=True)
+                     a extração de insights valiosos, fundamentais para orientação na tomada de decisões estratégicas. </div>""", unsafe_allow_html=True)
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Entre as principais tecnologias que domino estão: </div>""", unsafe_allow_html=True)
             st.write("") 
             col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
             with col3: 
                 st.image(os.path.join(current_dir, "python.png"), width=48) 
-                st.caption("Python")
+                st.markdown(
+        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Python</div>",
+        unsafe_allow_html=True
+    )
             with col4: 
                 st.image(os.path.join(current_dir, "r.png"), width=48)
                 st.caption("R") 
