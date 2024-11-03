@@ -96,6 +96,7 @@ if selected == 'Sobre mim':
             col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
             with col3: 
                 st.image(os.path.join(current_dir, "python.png"), width=48) 
+                st.caption("Python")
             with col4: 
                 st.image(os.path.join(current_dir, "r.png"), width=48) 
             with col5: 
@@ -109,7 +110,7 @@ if selected == 'Sobre mim':
             with col9: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
             st.write("") 
-            st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Ficou interessado? Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
+            st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
                         encontrará estudos de caso detalhados, análises aprofundadas e soluções inovadoras que desenvolvi ao longo da minha trajetória. Não perca a oportunidade de conhecer
                         mais sobre minhas habilidades e experiências! </div>""", unsafe_allow_html=True)
         with col2: 
