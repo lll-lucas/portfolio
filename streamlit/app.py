@@ -30,7 +30,7 @@ if lottie_about is None or lottie_contact is None:
     st.stop()
 
 # Verifique se os arquivos de imagem estão no diretório correto 
-image_files = ["python.png", "r.png", "mysql.png", "postgresql.png", "power_bi.png", "excel.png"] 
+image_files = ["python.png", "r.png", "mysql.png", "mariadb.png", "power_bi.png", "excel.png"] 
 for image_file in image_files:
     image_path = os.path.join(current_dir, image_file) 
     if not os.path.exists(image_path): 
@@ -93,7 +93,7 @@ if selected == 'Sobre mim':
                      a extração de insights valiosos, fundamentais para orientação na tomada de decisões estrategicas. </div>""", unsafe_allow_html=True)
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Entre as principais tecnologias que domino estão: </div>""", unsafe_allow_html=True)
             st.write("") 
-            col3, col4, col5, col6, col7, col8 = st.columns(6) 
+            col3, col4, col5, col6, col7, col8, col9 = st.columns(7) 
             with col3: 
                 st.image(os.path.join(current_dir, "python.png"), width=48) 
             with col4: 
@@ -101,10 +101,12 @@ if selected == 'Sobre mim':
             with col5: 
                 st.image(os.path.join(current_dir, "mysql.png"), width=48) 
             with col6: 
-                st.image(os.path.join(current_dir, "postgresql.png"), width=48) 
+                st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
             with col7: 
-                st.image(os.path.join(current_dir, "power_bi.png"), width=48) 
+                st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
             with col8: 
+                st.image(os.path.join(current_dir, "power_bi.png"), width=48)
+            with col9: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
             st.write("") 
             st.markdown(""" <div style='text-align: justify; font-size: 1.2em;'> Ficou interessado? Acesse a sessão de projetos para ver alguns dos meus principais trabalhos. Lá, você 
