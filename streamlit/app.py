@@ -82,43 +82,43 @@ if selected == 'Sobre mim':
             with col3: 
                 st.image(os.path.join(current_dir, "python.png"), width=48) 
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Python</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>Python</div>",
         unsafe_allow_html=True
     )
             with col4: 
                 st.image(os.path.join(current_dir, "r.png"), width=48)
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>R</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>R</div>",
         unsafe_allow_html=True
     )
             with col5: 
                 st.image(os.path.join(current_dir, "mysql.png"), width=48) 
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>MySQL</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>MySQL</div>",
         unsafe_allow_html=True
     )
             with col6: 
                 st.image(os.path.join(current_dir, "mariadb.png"), width=48) 
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>MariaDB</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>MariaDB</div>",
         unsafe_allow_html=True
     )
             with col7: 
                 st.image(os.path.join(current_dir, "sqlite.png"), width=48) 
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>SQlite</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>SQlite</div>",
         unsafe_allow_html=True
     )
             with col8: 
                 st.image(os.path.join(current_dir, "power_bi.png"), width=48)
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Power BI</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>Power BI</div>",
         unsafe_allow_html=True
     )
             with col9: 
                 st.image(os.path.join(current_dir, "excel.png"), width=48)
                 st.markdown(
-        "<div style='text-align: center; padding: 4px; background-color: #f4f4f4; color: #3572A5; border-radius: 8px;'>Excel</div>",
+        "<div style='text-align: center; padding: 4px; color: #3572A5; border-radius: 8px;'>Excel</div>",
         unsafe_allow_html=True
     )
             st.write("") 
