@@ -128,9 +128,10 @@ if selected == "Projetos":
         with col7:
             st.image(queimadas)  
         with col8:
-            st.subheader("Análise Estatística do Impacto de Fertilizantes") 
+            st.subheader("Análise Estatística do Impacto de Fertilizantes")
+            st.markdown("<span style='font-size: 14px; color: #FFFFFF; background-color: #007BFF; padding: 5px; border-radius: 5px;'>Python, R</span>", unsafe_allow_html=True) 
             st.markdown(""" <div style='text-align: justify;'> Este é um projeto de análise estatística que visa verificar o impacto de diferentes fertilizantes em uma produção agrícola.
-            Para isto utilizei técnicas estatísticas como a ANOVA e o Teste de Dunnett para comparação das médias dos tratamentos. </div> """, unsafe_allow_html=True)
+                    Para isto utilizei técnicas como a ANOVA e o Teste de Dunnett para comparação das médias dos tratamentos. </div> """, unsafe_allow_html=True)
             st.markdown("[Saiba mais](https://github.com/lll-lucas/Outro-Projeto)") 
         st.write("---")
 
