@@ -110,6 +110,13 @@ if selected == "Projetos":
             st.image(monte_carlo)
         with col4:
             st.subheader("Projeto X")
+            st.markdown("""
+    <div style='display: flex; gap: 10px;'>
+        <span style='font-size: 14px; color: #FFFFFF; background-color: #007BFF; padding: 5px; border-radius: 5px;'>Python</span>
+        <span style='font-size: 14px; color: #FFFFFF; background-color: #FF4B4B; padding: 5px; border-radius: 5px;'>Streamlit</span>
+    </div>
+    """, unsafe_allow_html=True)
+            st.write("")
             st.markdown(""" <div style='text-align: justify;'> breve resumo sobre o projeto </div>""", unsafe_allow_html=True)
             st.markdown("[Saiba mais](https://github.com/lll-lucas/Estudo-de-impacto-de-tratamentos-no-peso-de-plantas)")
         st.write("---")
@@ -131,8 +138,8 @@ if selected == "Projetos":
             st.subheader("Análise Estatística do Impacto de Fertilizantes")
             st.markdown("""
     <div style='display: flex; gap: 10px;'>
-        <span style='font-size: 14px; color: #FFFFFF; background-color: #007BFF; padding: 5px; border-radius: 5px;'>Python</span>
-        <span style='font-size: 14px; color: #FFFFFF; background-color: #28A745; padding: 5px; border-radius: 5px;'>R</span>
+        <span style='font-size: 14px; color: #FFFFFF; background-color: #007BFF; padding: 5px; border-radius: 5px;'>R</span>
+        <span style='font-size: 14px; color: #FFFFFF; background-color: #28A745; padding: 5px; border-radius: 5px;'>ggplot2</span>
     </div>
     """, unsafe_allow_html=True)
             st.write("")
